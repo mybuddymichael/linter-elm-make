@@ -1,4 +1,4 @@
-{BufferedProcess, CompositeDisposable} = require 'atom'
+{BufferedProcess} = require 'atom'
 
 module.exports =
   config:
