@@ -1,6 +1,6 @@
 # linter-elm-make
 
-Lint your Elm files with [linter](https://github.com/atom-community/linter) and `elm-make`.
+Lint your Elm files in Atom with [linter](https://github.com/atom-community/linter) and `elm-make`.
 
 ## Installation
 
