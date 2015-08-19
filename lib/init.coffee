@@ -7,14 +7,6 @@ module.exports =
       type: 'string'
       default: 'elm-make'
 
-  activate: ->
-    @subscriptions = new CompositeDisposable
-    @subscriptions.add atom.config.observe 'linter-elm-make.elmMakeExecutablePath',
-      (executablePath) => @executablePath = executablePath
-
-  deactivate: ->
-    @subscriptions.dispose()
-
   provideLinter: ->
     proc = process
     provider =
@@ -25,11 +17,12 @@ module.exports =
         return new Promise (resolve, reject) =>
           filePath = textEditor.getPath()
           lines = []
+          executablePath = atom.config.get 'linter-elm-make.elmMakeExecutablePath'
           options =
             cwd: atom.project.getPaths()[0]
             env: proc.env
           process = new BufferedProcess
-            command: @executablePath
+            command: executablePath
             args: [filePath, '--warn', '--report=json']
             options: options
             stdout: (data) ->
@@ -37,6 +30,7 @@ module.exports =
             exit: (code) =>
               text = lines[0]
               json = try JSON.parse(text.slice(0, text.indexOf("\n")))
+              console.log json if atom.inDevMode()
               return resolve [] unless json?
               resolve json.map (error) ->
                 type: error.type
@@ -48,7 +42,7 @@ module.exports =
                 ]
 
           process.onWillThrowError ({error,handle}) ->
-            atom.notifications.addError "Failed to run #{@executablePath}",
+            atom.notifications.addError "Failed to run #{executablePath}",
               detail: "#{error.message}"
               dismissable: true
             handle()
