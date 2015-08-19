@@ -11,4 +11,4 @@ Lint your Elm files in Atom with [linter](https://github.com/atom-community/lint
 
 ## Prior Art
 
-The boilerplate code here is repurposed from [linter-hlint](https://github.com/AtomLinter/linter-hlint). Much thanks to those [contributors](https://github.com/AtomLinter/linter-hlint/graphs/contributors).
+The boilerplate code here is repurposed from [linter-hlint](https://github.com/AtomLinter/linter-hlint). Much thanks to its [contributors](https://github.com/AtomLinter/linter-hlint/graphs/contributors).
