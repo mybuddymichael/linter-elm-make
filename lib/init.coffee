@@ -19,8 +19,8 @@ module.exports =
     proc = process
     provider =
       grammarScopes: ['source.elm']
-      scope: 'file' # or 'project'
-      lintOnFly: true # must be false for scope: 'project'
+      scope: 'file'
+      lintOnFly: true
       lint: (textEditor) =>
         return new Promise (resolve, reject) =>
           filePath = textEditor.getPath()
