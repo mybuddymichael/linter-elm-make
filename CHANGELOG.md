@@ -1,3 +1,6 @@
+## 0.3.0
+* Don't output a file on compilation.
+
 ## 0.2.0
 * Use JavaScript instead of CoffeeScript.
 * Warn the user if they're missing prerequisite packages.
