@@ -24,6 +24,9 @@ You may also add something like this in your `keymap.cson`:
 'atom-text-editor:not([mini])[data-grammar^="source elm"]':
   'f6': 'linter-elm-make:quick-fix'
   'shift-f6': 'linter-elm-make:quick-fix-all'
+
+'.linter-elm-make atom-text-editor[mini]':
+    'f6': 'core:confirm'
 ```
 
 ## Prior Art
