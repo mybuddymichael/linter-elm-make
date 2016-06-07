@@ -10,6 +10,12 @@ Lint your Elm files in Atom with [linter](https://github.com/atom-community/lint
 1. `$ apm install linter-elm-make`
 1. `$ which elm-make` and set that as your executable path in this installed package's configuration.
 
+## Linting Modes
+
+Linting is done on-the-fly by default. Make sure that the `Lint As You Type` option is checked in the `Linter` package settings.
+
+To lint only upon saving the file, check the `Only Lint On Save` option of this package.
+
 ## Quick Fixes
 
 Move your cursor to a problematic text range and choose `Linter Elm Make: Quick Fix` from the command palette to show the possible fixes. Select a fix from the list to apply it to your code.
