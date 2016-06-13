@@ -16,6 +16,12 @@ Linting is done on-the-fly by default. Make sure that the `Lint As You Type` opt
 
 To lint only upon saving the file, check the `Only Lint On Save` option of this package.
 
+To always compile `Main.elm` instead of the active file, check the ```Always Compile `Main.elm` `` option.
+
+You can also choose `Linter Elm Make: Toggle Only Lint On Save` or `Linter Elm Make: Toggle Always Compile Main.elm` from the command palette to switch between the linting modes.
+
+Choose `Linter Elm Make: Clear Project Build Artifacts` if you want to delete the `*.elmi` and `*.elmo` files of your project (useful when switching linting modes).
+
 ## Quick Fixes
 
 Move your cursor to a problematic text range and choose `Linter Elm Make: Quick Fix` from the command palette to show the possible fixes. Select a fix from the list to apply it to your code.
