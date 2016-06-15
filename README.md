@@ -12,15 +12,15 @@ Lint your Elm files in Atom with [linter](https://github.com/atom-community/lint
 
 ## Linting Modes
 
-By default, linting is only done after saving the file.  If you want to lint on the fly, uncheck the `Only Lint On Save` option in the package settings.  Also make sure that the `Lint As You Type` option is checked in the "Linter" package settings.
+By default, linting is only done after saving the file.  If you want to lint while typing, check the `Lint On The Fly` option in the package settings.  Also make sure that the `Lint As You Type` option is checked in the [linter](https://github.com/atom-community/linter) package settings.
 
-On-the-fly linting is still experimental at the moment.  Use at your own risk :)
+To always compile `Main.elm` instead of the active file, check the ```Always Compile `Main.elm` `` option.  Take note that if this is enabled, modules unreachable from the main modules will not be linted.
 
-To always compile `Main.elm` instead of the active file, check the ```Always Compile `Main.elm` `` option.  Take note that if this is enabled, modules unreachable from the main module will not be linted.
+You can also choose `Linter Elm Make: Toggle Lint On The Fly` or `Linter Elm Make: Toggle Always Compile Main` from the command palette to switch between the linting modes.
 
-You can also choose `Linter Elm Make: Toggle Only Lint On Save` or `Linter Elm Make: Toggle Always Compile Main.elm` from the command palette to switch between the linting modes.
+Invoke `Linter Elm Make: Clear Project Build Artifacts` from the command palette if you want to delete the `*.elmi` and `*.elmo` files of your project (useful when switching linting modes).
 
-Choose `Linter Elm Make: Clear Project Build Artifacts` from the command palette if you want to delete the `*.elmi` and `*.elmo` files of your project (useful when switching linting modes).
+![lint-on-fly](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/lint-on-fly.gif?raw=true)
 
 ## Quick Fixes
 
