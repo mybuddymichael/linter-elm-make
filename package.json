@@ -9,11 +9,13 @@
     "atom": ">=1.0.0 < 2.0.0"
   },
   "dependencies": {
-    "fs": "0.0.2",
     "path": "^0.12.7",
     "space-pen": "^4.2.2",
     "atom-space-pen-views": "^0.20.0",
-    "atom-linter": "^5.0.1"
+    "atom-linter": "^5.0.1",
+    "fs-extra": "0.30.0",
+    "tmp": "0.0.28",
+    "chokidar": "1.5.2"
   },
   "providedServices": {
     "linter": {
