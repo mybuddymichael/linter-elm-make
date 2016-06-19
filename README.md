@@ -2,6 +2,8 @@
 
 Lint your Elm files in Atom with [linter](https://github.com/atom-community/linter) and `elm-make`.
 
+![lint-on-fly](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/lint-on-fly.gif?raw=true)
+
 ## Installation
 
 1. [Install `elm`](http://elm-lang.org/install).
@@ -10,25 +12,24 @@ Lint your Elm files in Atom with [linter](https://github.com/atom-community/lint
 1. `$ apm install linter-elm-make`
 1. `$ which elm-make` and set that as your executable path in this installed package's configuration.
 
-## Linting Modes
+## Configuration
 
-By default, linting is only done after saving the file.  If you want to lint while typing, check the `Lint On The Fly` option in the package settings.  Also make sure that the `Lint As You Type` option is checked in the [linter](https://github.com/atom-community/linter) package settings.
+### Lint On The Fly
+By default, linting is only done after saving the file.  If you want to lint while typing, turn on the `Lint On The Fly` option in the package settings.  Also make sure that the `Lint As You Type` option is enabled in the [linter](https://github.com/atom-community/linter) package settings.
 
-To always compile `Main.elm` instead of the active file, check the ```Always Compile `Main.elm` `` option.  Take note that if this is enabled, modules unreachable from the main modules will not be linted.
+### Always Compile Main
+To always compile `Main.elm` files in source directories instead of compiling the active file, turn on the `Always Compile Main` option.  Take note that if this is enabled, modules unreachable from the main modules will not be linted.
 
-You can also choose `Linter Elm Make: Toggle Lint On The Fly` or `Linter Elm Make: Toggle Always Compile Main` from the command palette to switch between the linting modes.
-
-Invoke `Linter Elm Make: Clear Project Build Artifacts` from the command palette if you want to delete the `*.elmi` and `*.elmo` files of your project (useful when switching linting modes).
-
-![lint-on-fly](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/lint-on-fly.gif?raw=true)
+### Report Warnings
+Enable this to show `elm-make` warnings.
 
 ## Quick Fixes
 
-Move your cursor to a problematic text range and choose `Linter Elm Make: Quick Fix` from the command palette to show the possible fixes. Select a fix from the list to apply it to your code.
+Move your cursor to a problematic text range and invoke `Linter Elm Make: Quick Fix` to show the possible fixes. Select a fix from the list to apply it to your code.
 
 ![quick-fix](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/quick-fix.png?raw=true)
 
-Choosing `Linter Elm Make: Quick Fix All` will fix all the issues in the active text editor. If there is more than one fix for an issue, it will choose the first from the list.
+Invoking `Linter Elm Make: Quick Fix All` will fix all the issues in the active text editor. If there is more than one fix for an issue, it will choose the first from the list.
 
 You may also add something like this in your `keymap.cson`:
 
@@ -40,6 +41,15 @@ You may also add something like this in your `keymap.cson`:
 '.linter-elm-make atom-text-editor[mini]':
     'f6': 'core:confirm'
 ```
+
+## Other Useful Commands
+
+### `Linter Elm Make: Toggle Lint On The Fly`
+
+### `Linter Elm Make: Toggle Always Compile Main`
+
+### `Linter Elm Make: Clear Project Build Artifacts`
+Deletes the `*.elmi` and `*.elmo` files in your project's build artifacts directory (e.g. elm-stuff/build-artifacts/0.17.0/user/project/1.0.0).  This is useful after toggling `Lint On The Fly` and/or `Always Compile Main` to prevent confusing lint results.
 
 ## Prior Art
 
