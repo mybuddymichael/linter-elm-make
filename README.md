@@ -15,10 +15,10 @@ Lint your Elm files in Atom with [linter](https://github.com/atom-community/lint
 ## Configuration
 
 ### Lint On The Fly
-By default, linting is only done after saving the file.  If you want to lint while typing, check the `Lint On The Fly` option in the package settings.  Also make sure that the `Lint As You Type` option is enabled in the [linter](https://github.com/atom-community/linter) package settings.
+By default, linting is only done after saving the file.  If you want to lint while typing, turn on the `Lint On The Fly` option in the package settings.  Also make sure that the `Lint As You Type` option is enabled in the [linter](https://github.com/atom-community/linter) package settings.
 
 ### Always Compile Main
-To always compile `Main.elm` files in source directories instead of the active file, check the `Always Compile Main` option.  Take note that if this is enabled, modules unreachable from the main modules will not be linted.
+To always compile `Main.elm` files in source directories instead of compiling the active file, turn on the `Always Compile Main` option.  Take note that if this is enabled, modules unreachable from the main modules will not be linted.
 
 ### Report Warnings
 Enable this to show `elm-make` warnings.
@@ -49,7 +49,7 @@ You may also add something like this in your `keymap.cson`:
 ### `Linter Elm Make: Toggle Always Compile Main`
 
 ### `Linter Elm Make: Clear Project Build Artifacts`
-Deletes the `*.elmi` and `*.elmo` files of your project, excluding those from 3rd party packages.  This is useful after toggling `Lint On The Fly` or `Always Compile Main`.
+Deletes the `*.elmi` and `*.elmo` files in your project's build artifacts directory (e.g. elm-stuff/build-artifacts/0.17.0/user/project/1.0.0).  This is useful after toggling `Lint On The Fly` and/or `Always Compile Main` to prevent confusing lint results.
 
 ## Prior Art
 
