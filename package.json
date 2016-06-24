@@ -22,6 +22,11 @@
       "versions": {
         "1.0.0": "provideLinter"
       }
+    },
+    "linter-elm-make-get-compile-directory": {
+      "versions": {
+        "1.0.0": "provideGetCompileDirectory"
+      }
     }
   },
   "consumedServices": {
