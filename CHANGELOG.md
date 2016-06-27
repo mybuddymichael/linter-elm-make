@@ -1,3 +1,7 @@
+## 0.10.1
+* Add useful error details.
+* Update `CHANGELOG.md`.
+
 ## 0.10.0
 * Add `Linter Elm Make: Set Main Path`.
 * Set `Always Compile Main` default to `false`.
