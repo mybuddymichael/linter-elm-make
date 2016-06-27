@@ -1,3 +1,25 @@
+## 0.10.0
+* Add `Linter Elm Make: Set Main Path`.
+* Set `Always Compile Main` default to `false`.
+
+## 0.9.0
+* On-the-fly linting 2.0.
+
+## 0.8.0
+* Add `Always Compile Main` option.
+
+## 0.7.0
+* Add option to ignore `elm-make` warnings.
+
+## 0.6.0
+* On-the-fly linting.
+
+## 0.5.0
+* Add `Linter Elm Make: Quick Fix` and `Linter Elm Make: Quick Fix All`.
+
+## 0.4.0
+* Various fixes.
+
 ## 0.3.0
 * Don't output a file on compilation.
 
