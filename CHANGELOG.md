@@ -1,3 +1,6 @@
+## 0.11.0
+* Add `Work Directory` option.
+
 ## 0.10.1
 * Add useful error details.
 * Update `CHANGELOG.md`.
