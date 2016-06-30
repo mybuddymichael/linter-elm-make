@@ -7,13 +7,13 @@ Lint your Elm files in Atom with [linter](https://github.com/atom-community/lint
 ## Installation
 
 1. [Install `elm`](http://elm-lang.org/install).
-1. Install [`linter`](https://github.com/atom-community/linter), [`language-elm`](https://github.com/atom-community/language-elm), and [`linter-elm-make`](https://github.com/atom-community/linter-elm-make) from the Settings view (`Edit` > `Preferences` > `Install`) or by running these from the command line:
+2. Install [`linter`](https://github.com/atom-community/linter), [`language-elm`](https://github.com/atom-community/language-elm), and [`linter-elm-make`](https://github.com/atom-community/linter-elm-make) from the Settings view (`Edit` > `Preferences` > `Install`) or by running these from the command line:
 ```
 apm install linter
 apm install language-elm
 apm install linter-elm-make
 ```
-1. Run `which elm-make` (Unix/Linux) or `where.exe elm-make` (Windows) from the command line and set the result as your executable path in this installed package's configuration.
+3. Run `which elm-make` (Unix/Linux) or `where.exe elm-make` (Windows) from the command line and set the result as your executable path in this installed package's configuration.
 
 ## Configuration
 
