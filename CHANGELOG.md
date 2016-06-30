@@ -1,3 +1,6 @@
+## 0.11.1
+* Fix `Clear Project Build Artifacts` error when build artifacts directory does not exist.
+
 ## 0.11.0
 * Add `Work Directory` option.
 
