@@ -1,3 +1,7 @@
+## 0.12.0
+* Remove `Linter Elm Make: Set Main Path`.
+* Add `Linter Elm Make: Set Main Paths` (allow more than 1 main path).
+
 ## 0.11.1
 * Fix `Clear Project Build Artifacts` error when build artifacts directory does not exist.
 
