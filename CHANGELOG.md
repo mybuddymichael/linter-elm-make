@@ -1,3 +1,39 @@
+## 0.12.0
+* Remove `Linter Elm Make: Set Main Path`.
+* Add `Linter Elm Make: Set Main Paths` (allow more than 1 main path).
+
+## 0.11.1
+* Fix `Clear Project Build Artifacts` error when build artifacts directory does not exist.
+
+## 0.11.0
+* Add `Work Directory` option.
+
+## 0.10.1
+* Add useful error details.
+* Update `CHANGELOG.md`.
+
+## 0.10.0
+* Add `Linter Elm Make: Set Main Path`.
+* Set `Always Compile Main` default to `false`.
+
+## 0.9.0
+* On-the-fly linting 2.0.
+
+## 0.8.0
+* Add `Always Compile Main` option.
+
+## 0.7.0
+* Add option to ignore `elm-make` warnings.
+
+## 0.6.0
+* On-the-fly linting.
+
+## 0.5.0
+* Add `Linter Elm Make: Quick Fix` and `Linter Elm Make: Quick Fix All`.
+
+## 0.4.0
+* Various fixes.
+
 ## 0.3.0
 * Don't output a file on compilation.
 
