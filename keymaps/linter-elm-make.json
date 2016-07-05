@@ -1,0 +1,6 @@
+{
+  "atom-text-editor.linter-elm-make-set-main-paths": {
+    "escape": "linter-elm-make:cancel-set-main-paths",
+    "enter": "linter-elm-make:confirm-set-main-paths"
+  }
+}
