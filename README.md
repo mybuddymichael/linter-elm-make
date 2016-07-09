@@ -6,14 +6,14 @@ Lint your Elm files in Atom with [linter](https://github.com/atom-community/lint
 
 ## Installation
 
-1. [Install `elm`](http://elm-lang.org/install).
-2. Install [`linter`](https://github.com/atom-community/linter), [`language-elm`](https://github.com/atom-community/language-elm), and [`linter-elm-make`](https://github.com/atom-community/linter-elm-make) from the Settings view (`Edit` > `Preferences` > `Install`) or by running these from the command line:
-```
-apm install linter
-apm install language-elm
-apm install linter-elm-make
-```
-3. Run `which elm-make` (Unix/Linux) or `where.exe elm-make` (Windows) from the command line and set the result as your executable path in this installed package's configuration.
+1. Install [`elm`](http://elm-lang.org/install).
+1. Install [`linter`](https://github.com/atom-community/linter), [`language-elm`](https://github.com/atom-community/language-elm), and [`linter-elm-make`](https://github.com/atom-community/linter-elm-make) from the Settings view (`Edit` > `Preferences` > `Install`) or by running these from the command line:
+  ```
+  apm install linter
+  apm install language-elm
+  apm install linter-elm-make
+  ```
+1. Run `which elm-make` (Unix/Linux) or `where.exe elm-make` (Windows) from the command line and set the result as your executable path in this installed package's configuration.
 
 ## Configuration
 
@@ -41,7 +41,7 @@ IMPORTANT WARNING: If the work directory is inside the project directory and you
 
 If this option makes no sense and/or is confusing, just leave it blank. :)
 
-## Quick Fixes
+## Commands
 
 #### `Linter Elm Make: Quick Fix`
 Move your cursor to a problematic text range and invoke this command to show the possible fixes. Select a fix from the list to apply it to your code.
@@ -62,18 +62,18 @@ You may also add something like this in your `keymap.cson`:
     'f6': 'core:confirm'
 ```
 
-## Useful Commands
-
 #### `Linter Elm Make: Set Main Paths`
-Sets the main paths of the project and saves it to `elm-package.json`.
+Sets the main paths of the project and saves them to `elm-package.json`.
 
 Example:
 ```
 "linter-elm-make": {
-  "mainPaths": ["Todo.elm"]
+  "mainPaths": ["Todo.elm", "Test.elm"]
 }
 ```
 The main paths are only relevant if `Always Compile Main` is enabled.  See [above](https://github.com/mybuddymichael/linter-elm-make#always-compile-main).
+
+WARNING: Running `elm-package install` removes `mainPaths` from `elm-package.json` so you need to invoke `Linter Elm Make: Set Main Paths` again after.
 
 #### `Linter Elm Make: Clear Project Build Artifacts`
 Deletes the `.elmi` and `.elmo` files in your project's build artifacts directory (e.g. elm-stuff/build-artifacts/0.17.0/user/project/1.0.0).  This is useful after toggling `Lint On The Fly` and/or `Always Compile Main` to prevent confusing lint results.  If using a work directory or temporary directory, the artifact files of that directory will also be deleted.
