@@ -1,3 +1,7 @@
+## 0.13.0
+* Only copy source directory files to the work directory.
+* Make `Clear Project Build Artifacts` work in Windows.
+
 ## 0.12.0
 * Remove `Linter Elm Make: Set Main Path`.
 * Add `Linter Elm Make: Set Main Paths` (allow more than 1 main path).
