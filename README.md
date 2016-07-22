@@ -37,7 +37,7 @@ Show `elm-make` warnings.  Enabled by default.
 
 If this option is not blank, a file watcher will watch the project directory for source file changes and synchronize those with the work directory.
 
-IMPORTANT WARNING: If the work directory is inside the project directory and you want to change the value of `Work Directory`, delete the work directory first!  Else, the linter will consider the work directory as part of your project.
+IMPORTANT WARNING: If the current work directory is inside the project directory and you want to change the value of `Work Directory` in the settings, delete the current work directory first!  Else, the linter will consider that directory as part of your project!
 
 If this option makes no sense and/or is confusing, just leave it blank. :)
 
