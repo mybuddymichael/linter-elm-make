@@ -14,7 +14,7 @@ Lint your Elm files in Atom with [linter](https://github.com/atom-community/lint
   apm install linter-elm-make
   ```
 1. Run `which elm-make` (Unix/Linux) or `where.exe elm-make` (Windows) from the command line and set the result as your executable path in this installed package's configuration.
-  - Press Cmd-, or Ctrl-,
+  - Press <kbd>Cmd</kbd><kbd>,</kbd> or <kbd>Ctrl</kbd><kbd>,</kbd>
   - Click the "Packages" menu item in the left pane.
   - Click on the "linter-elm-make" package in the list that appears.
   - Scroll down to the "Settings" section and enter the path to your `elm-make` in the text field labeled "The elm-make executable path." (Your path should look something like `/usr/local/bin/elm-make`.)
