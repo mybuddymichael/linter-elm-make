@@ -1,3 +1,6 @@
+## 0.13.2
+* Add notification when copying files to work directory.
+
 ## 0.13.0
 * Only copy source directory files to the work directory.
 * Make `Clear Project Build Artifacts` work in Windows.
