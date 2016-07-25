@@ -1,3 +1,6 @@
+## 0.13.3
+* Run only 1 `elm-make` process for multiple main paths.
+
 ## 0.13.2
 * Add notification when copying files to work directory.
 
