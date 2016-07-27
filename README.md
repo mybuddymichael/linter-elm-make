@@ -1,13 +1,13 @@
 # linter-elm-make
 
-Lint your Elm files in Atom with [linter](https://github.com/atom-community/linter) and `elm-make`.
+Lint your Elm files in Atom with [linter](https://atom.io/packages/linter) and `elm-make`.
 
 ![lint-on-fly](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/lint-on-fly.gif?raw=true)
 
 ## Installation
 
 1. Install [`elm`](http://elm-lang.org/install).
-1. Install [`linter`](https://github.com/atom-community/linter), [`language-elm`](https://github.com/atom-community/language-elm), and [`linter-elm-make`](https://github.com/atom-community/linter-elm-make) from the Settings view (`Edit` > `Preferences` > `Install`) or by running these from the command line:
+1. Install [`linter`](https://atom.io/packages/linter), [`language-elm`](https://atom.io/packages/language-elm), and [`linter-elm-make`](https://atom.io/packages/linter-elm-make) from the Settings view (`Edit` > `Preferences` > `Install`) or by running these from the command line:
   ```
   apm install linter
   apm install language-elm
@@ -18,7 +18,7 @@ Lint your Elm files in Atom with [linter](https://github.com/atom-community/lint
 ## Configuration
 
 #### `Lint On The Fly`
-By default, linting is only done after saving the file.  If you want to lint while typing, turn on the `Lint On The Fly` option in the package settings.  Also make sure that the `Lint As You Type` option is enabled in the [linter](https://github.com/atom-community/linter) package settings.
+By default, linting is only done after saving the file.  If you want to lint while typing, turn on the `Lint On The Fly` option in the package settings.  Also make sure that the `Lint As You Type` option is enabled in the [linter](https://atom.io/packages/linter) package settings.
 
 #### `Always Compile Main`
 If enabled, the main file(s) will always be compiled instead of the active file.  The main files can be set using `Linter Elm Make: Set Main Paths`.  If not set, the linter will look for `Main.elm` files in the source directories.  Take note that if this is enabled, modules unreachable from the main modules will not be linted.  Disabled by default.
@@ -63,17 +63,15 @@ You may also add something like this in your `keymap.cson`:
 ```
 
 #### `Linter Elm Make: Set Main Paths`
-Sets the main paths of the project and saves them to `elm-package.json`.
+Sets the main paths of the project and saves them to `linter-elm-make.json`.
 
 Example:
 ```
-"linter-elm-make": {
+{
   "mainPaths": ["Todo.elm", "Test.elm"]
 }
 ```
 The main paths are only relevant if `Always Compile Main` is enabled.  See [above](https://github.com/mybuddymichael/linter-elm-make#always-compile-main).
-
-WARNING: Running `elm-package install` removes `mainPaths` from `elm-package.json` so you need to invoke `Linter Elm Make: Set Main Paths` again after.
 
 #### `Linter Elm Make: Clear Project Build Artifacts`
 Deletes the `.elmi` and `.elmo` files in your project's build artifacts directory (e.g. elm-stuff/build-artifacts/0.17.0/user/project/1.0.0).  This is useful after toggling `Lint On The Fly` and/or `Always Compile Main` to prevent confusing lint results.  If using a work directory or temporary directory, the artifact files of that directory will also be deleted.
@@ -83,6 +81,16 @@ Deletes the `.elmi` and `.elmo` files in your project's build artifacts director
 #### `Linter Elm Make: Toggle Always Compile Main`
 
 #### `Linter Elm Make: Toggle Report Warnings`
+
+## Useful [`linter`](https://atom.io/packages/linter) Commands
+
+#### `Linter: Lint`
+
+#### `Linter: Next Error`
+
+#### `Linter: Previous Error`
+
+#### `Linter: Toggle`
 
 ## Prior Art
 
