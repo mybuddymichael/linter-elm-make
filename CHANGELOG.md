@@ -1,3 +1,8 @@
+## 0.14.0
+* Undo 0.13.3!  Run a separate `elm-make` process again for each main path because there is an issue with files having the same module name.
+* Save `mainPaths` to `linter-elm-make.json` instead of `elm-package.json`.
+* Fix wrong links in README.md.
+
 ## 0.13.3
 * Run only 1 `elm-make` process for multiple main paths.
 
