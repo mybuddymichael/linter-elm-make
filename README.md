@@ -71,7 +71,7 @@ Example:
   "mainPaths": ["Todo.elm", "Test.elm"]
 }
 ```
-The main paths are only relevant if `Always Compile Main` is enabled.  See [above](https://github.com/mybuddymichael/linter-elm-make#always-compile-main).
+The main paths are only relevant if `Always Compile Main` is enabled.  See [above](#always-compile-main).
 
 #### `Linter Elm Make: Clear Project Build Artifacts`
 Deletes the `.elmi` and `.elmo` files in your project's build artifacts directory (e.g. elm-stuff/build-artifacts/0.17.0/user/project/1.0.0).  This is useful after toggling `Lint On The Fly` and/or `Always Compile Main` to prevent confusing lint results.  If using a work directory or temporary directory, the artifact files of that directory will also be deleted.
