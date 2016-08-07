@@ -11,7 +11,7 @@
   "dependencies": {
     "path": "^0.12.7",
     "atom-space-pen-views": "^2.2.0",
-    "atom-linter": "^5.0.1",
+    "atom-linter": "^7.0.0",
     "fs-extra": "0.30.0",
     "tmp": "0.0.28",
     "chokidar": "1.5.2",
