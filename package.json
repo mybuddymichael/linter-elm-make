@@ -15,7 +15,8 @@
     "fs-extra": "0.30.0",
     "tmp": "0.0.28",
     "chokidar": "1.5.2",
-    "readdir": "0.0.13"
+    "readdir": "0.0.13",
+    "promise-queue": "2.2.3"
   },
   "providedServices": {
     "linter": {
