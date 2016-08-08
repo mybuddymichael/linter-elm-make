@@ -48,6 +48,8 @@ Move your cursor to a problematic text range and invoke this command to show the
 
 ![quick-fix](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/quick-fix.png?raw=true)
 
+The number of available fixes for a given cursor position is shown in the status bar.
+
 #### `Linter Elm Make: Quick Fix All`
 Fixes all issues in the active text editor in one go. If there is more than one fix for an issue, it will choose the first from the list.
 
@@ -71,7 +73,7 @@ Example:
   "mainPaths": ["Todo.elm", "Test.elm"]
 }
 ```
-The main paths are only relevant if `Always Compile Main` is enabled.  See [above](https://github.com/mybuddymichael/linter-elm-make#always-compile-main).
+The main paths are only relevant if `Always Compile Main` is enabled.  See [above](#always-compile-main).
 
 #### `Linter Elm Make: Clear Project Build Artifacts`
 Deletes the `.elmi` and `.elmo` files in your project's build artifacts directory (e.g. elm-stuff/build-artifacts/0.17.0/user/project/1.0.0).  This is useful after toggling `Lint On The Fly` and/or `Always Compile Main` to prevent confusing lint results.  If using a work directory or temporary directory, the artifact files of that directory will also be deleted.

@@ -1,3 +1,9 @@
+## 0.15.0
+* Add "Quick Fixes" indicator in the status bar.
+* Add lint task queue to prevent race conditions.
+* Update `atom-linter` version.
+* If a source directory is inside another, do not copy files for that source directory anymore (to the work directory).
+
 ## 0.14.0
 * Undo 0.13.3!  Run a separate `elm-make` process again for each main path because there is an issue with files having the same module name.
 * Save `mainPaths` to `linter-elm-make.json` instead of `elm-package.json`.
