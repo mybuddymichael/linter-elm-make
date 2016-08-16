@@ -9,14 +9,15 @@
     "atom": ">=1.0.0 < 2.0.0"
   },
   "dependencies": {
-    "path": "^0.12.7",
-    "atom-space-pen-views": "^2.2.0",
-    "atom-linter": "^7.0.0",
     "fs-extra": "0.30.0",
     "tmp": "0.0.28",
+    "path": "^0.12.7",
     "chokidar": "1.5.2",
     "readdir": "0.0.13",
-    "promise-queue": "2.2.3"
+    "promise-queue": "2.2.3",
+    "atom-space-pen-views": "^2.2.0",
+    "atom-linter": "^7.0.0",
+    "underscore": "1.8.3"
   },
   "providedServices": {
     "linter": {

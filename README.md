@@ -6,8 +6,9 @@ Lint your Elm files in Atom with [linter](https://atom.io/packages/linter) and `
 
 ## Installation
 
-1. Install [`elm`](http://elm-lang.org/install).
+1. Install [`Elm`](http://elm-lang.org/install).
 1. Install [`linter`](https://atom.io/packages/linter), [`language-elm`](https://atom.io/packages/language-elm), and [`linter-elm-make`](https://atom.io/packages/linter-elm-make) from the Settings view (`Edit` > `Preferences` > `Install`) or by running these from the command line:
+
   ```
   apm install linter
   apm install language-elm
