@@ -1,3 +1,7 @@
+## 0.16.0
+* Add `Auto Scroll Issue Into View` option.
+* Escape html in issue.
+
 ## 0.15.0
 * Add "Quick Fixes" indicator in the status bar.
 * Add lint task queue to prevent race conditions.
