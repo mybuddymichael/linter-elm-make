@@ -25,7 +25,7 @@
         "1.0.0": "provideLinter"
       }
     },
-    "linter-elm-make-get-work-directory": {
+    "linter-elm-make.getWorkDirectory": {
       "versions": {
         "1.0.0": "provideGetWorkDirectory"
       }
