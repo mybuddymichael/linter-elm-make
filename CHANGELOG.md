@@ -1,6 +1,9 @@
+## 0.17.0
+* Add `Log Debug Messages` option.
+
 ## 0.16.0
 * Add `Auto Scroll Issue Into View` option.
-* Escape html in issue.
+* Escape html in issue messages.
 
 ## 0.15.0
 * Add "Quick Fixes" indicator in the status bar.
