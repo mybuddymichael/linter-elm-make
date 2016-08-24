@@ -1,3 +1,6 @@
+## 0.17.2
+* Refactor filter out child source directories.  Thanks @Leonqn!
+
 ## 0.17.1
 * Fix issue related to syncing work directory with project directory.
 
