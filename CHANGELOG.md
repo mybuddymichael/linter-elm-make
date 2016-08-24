@@ -1,3 +1,6 @@
+## 0.17.1
+* Fix issue related to syncing work directory with project directory.
+
 ## 0.17.0
 * Add `Log Debug Messages` option.
 
