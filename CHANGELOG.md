@@ -1,3 +1,6 @@
+## 0.17.3
+* Filter out `elm-make: unable to decommit memory: Invalid argument` messages.  Thanks @despairblue!
+
 ## 0.17.2
 * Refactor filter out child source directories.  Thanks @Leonqn!
 
