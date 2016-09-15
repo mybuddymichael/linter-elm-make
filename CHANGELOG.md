@@ -1,3 +1,6 @@
+## 0.17.4
+* Allow integration with [Nuclide](https://atom.io/packages/nuclide) diagnostics.
+
 ## 0.17.3
 * Filter out `elm-make: unable to decommit memory: Invalid argument` messages.  Thanks @despairblue!
 
