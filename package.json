@@ -17,7 +17,8 @@
     "promise-queue": "2.2.3",
     "atom-space-pen-views": "^2.2.0",
     "atom-linter": "^7.0.0",
-    "underscore": "1.8.3"
+    "underscore": "1.8.3",
+    "diff-match-patch": "1.0.0"
   },
   "providedServices": {
     "linter": {

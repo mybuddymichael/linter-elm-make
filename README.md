@@ -6,14 +6,16 @@ Lint your Elm files in Atom with [linter](https://atom.io/packages/linter) and `
 
 ## Installation
 
-1. Install [`Elm`](http://elm-lang.org/install).
-1. Install [`linter`](https://atom.io/packages/linter), [`language-elm`](https://atom.io/packages/language-elm), and [`linter-elm-make`](https://atom.io/packages/linter-elm-make) from the Settings view (`Edit` > `Preferences` > `Install`) or by running these from the command line:
+1. Install [Elm](http://elm-lang.org/install).
+1. Install [linter](https://atom.io/packages/linter), [language-elm](https://atom.io/packages/language-elm), and [linter-elm-make](https://atom.io/packages/linter-elm-make) from the Settings view (`Edit` > `Preferences` > `Install`) or by running these from the command line:
 
   ```
   apm install linter
   apm install language-elm
   apm install linter-elm-make
   ```
+
+  Note: If you want to use [Nuclide](https://atom.io/packages/nuclide) in lieu of [linter](https://atom.io/packages/linter), check this [compatibility guide](https://nuclide.io/docs/advanced-topics/linter-package-compatibility).
 1. Run `which elm-make` (Unix/Linux) or `where.exe elm-make` (Windows) from the command line and set the result as your executable path in this installed package's configuration.
 
 ## Configuration
@@ -85,7 +87,7 @@ Deletes the `.elmi` and `.elmo` files in your project's build artifacts director
 
 #### `Linter Elm Make: Toggle Report Warnings`
 
-## Useful [`linter`](https://atom.io/packages/linter) Commands
+## Useful [linter](https://atom.io/packages/linter) Commands
 
 #### `Linter: Lint`
 
