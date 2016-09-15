@@ -1,3 +1,6 @@
+## 0.17.5
+* Fix `elm-format` integration bug.
+
 ## 0.17.4
 * Allow integration with [Nuclide](https://atom.io/packages/nuclide) diagnostics.
 
