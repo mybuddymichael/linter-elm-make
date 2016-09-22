@@ -1,3 +1,6 @@
+## 0.17.7
+* If `Lint On The Fly` is enabled or `Work Directory` is set, do not lint if there is a source directory outside the project directory.
+
 ## 0.17.6
 * Fix \#93.
 
