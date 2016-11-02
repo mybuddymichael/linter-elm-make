@@ -1,3 +1,7 @@
+## 0.17.8
+* Only copy `.elm` files, `elm-package.json`, and `elm-stuff` of the project directory to the work directory.
+* If `Lint On The Fly` is enabled, force a lint when a `.elm` file is deleted.
+
 ## 0.17.7
 * If `Lint On The Fly` is enabled or `Work Directory` is set, do not lint if there is a source directory outside the project directory.
 
