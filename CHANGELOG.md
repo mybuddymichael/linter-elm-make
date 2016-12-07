@@ -1,3 +1,6 @@
+## 0.18.0
+* Add auto import and syntax error quick fixes.
+
 ## 0.17.8
 * Only copy `.elm` files, `elm-package.json`, and `elm-stuff` of the project directory to the work directory.
 * If `Lint On The Fly` is enabled, force a lint when a `.elm` file is deleted.
