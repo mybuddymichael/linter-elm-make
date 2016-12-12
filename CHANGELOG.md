@@ -1,3 +1,6 @@
+## 0.18.1
+* Fix errors when status-bar isn't available.  Thanks, @ream88!
+
 ## 0.18.0
 * Add auto import and syntax error quick fixes.
 
@@ -18,10 +21,10 @@
 * Allow integration with [Nuclide](https://atom.io/packages/nuclide) diagnostics.
 
 ## 0.17.3
-* Filter out `elm-make: unable to decommit memory: Invalid argument` messages.  Thanks @despairblue!
+* Filter out `elm-make: unable to decommit memory: Invalid argument` messages.  Thanks, @despairblue!
 
 ## 0.17.2
-* Refactor filter out child source directories.  Thanks @Leonqn!
+* Refactor filter out child source directories.  Thanks, @Leonqn!
 
 ## 0.17.1
 * Fix issue related to syncing work directory with project directory.
