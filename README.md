@@ -23,6 +23,8 @@ Lint your Elm files in Atom with [linter](https://atom.io/packages/linter) and `
 #### `Lint On The Fly`
 By default, linting is only done after saving the file.  If you want to lint while typing, turn on the `Lint On The Fly` option in the package settings.  Also make sure that the `Lint As You Type` option is enabled in the [linter](https://atom.io/packages/linter) package settings.
 
+NOTE: Linting on the fly is experimental and currently works by copying the source files to the `Work Directory` (or to a temporary directory if `Work Directory` is blank) and running `elm-make` there.
+
 #### `Always Compile Main`
 If enabled, the main file(s) will always be compiled instead of the active file.  The main files can be set using `Linter Elm Make: Set Main Paths`.  If not set, the linter will look for `Main.elm` files in the source directories.  Take note that if this is enabled, modules unreachable from the main modules will not be linted.  Disabled by default.
 
