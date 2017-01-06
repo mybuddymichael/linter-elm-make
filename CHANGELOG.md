@@ -1,3 +1,6 @@
+## 0.18.2
+* Add quick fix for "The record fields do not match up".
+
 ## 0.18.1
 * Fix errors when status-bar isn't available.  Thanks, @ream88!
 
