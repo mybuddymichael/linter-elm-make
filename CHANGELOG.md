@@ -1,3 +1,6 @@
+## 0.18.3
+* Put a try/catch when checking if a file exists.
+
 ## 0.18.2
 * Add quick fix for "The record fields do not match up".
 
