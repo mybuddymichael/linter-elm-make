@@ -25,6 +25,11 @@
         "1.0.0": "provideLinter"
       }
     },
+    "intentions:list": {
+      "versions": {
+        "1.0.0": "provideIntentions"
+      }
+    },
     "linter-elm-make.getWorkDirectory": {
       "versions": {
         "1.0.0": "provideGetWorkDirectory"

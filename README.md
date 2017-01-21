@@ -15,7 +15,10 @@ Lint your Elm files in Atom with [linter](https://atom.io/packages/linter) and `
   apm install linter-elm-make
   ```
 
-  Note: If you want to use [Nuclide](https://atom.io/packages/nuclide) in lieu of [linter](https://atom.io/packages/linter), check this [compatibility guide](https://nuclide.io/docs/advanced-topics/linter-package-compatibility).
+  * If you want to use [Nuclide](https://atom.io/packages/nuclide) in lieu of [linter](https://atom.io/packages/linter), check this [compatibility guide](https://nuclide.io/docs/advanced-topics/linter-package-compatibility).
+
+  * You can also use the [Intentions](https://atom.io/packages/intentions) package instead of the default `Quick Fix` UI.
+
 1. Run `which elm-make` (Unix/Linux) or `where.exe elm-make` (Windows) from the command line and set the result as your executable path in this installed package's configuration.
 
 ## Configuration
@@ -53,6 +56,10 @@ Move your cursor to a problematic text range and invoke this command to show the
 
 ![quick-fix](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/quick-fix.png?raw=true)
 
+  * If you have [Intentions](https://atom.io/packages/intentions) installed, you can invoke `Intentions: Show` instead.
+
+  ![quick-fix-intentions](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/quick-fix-intentions.png?raw=true)
+
 The number of available fixes for a given cursor position is shown in the status bar.
 
 #### `Linter Elm Make: Quick Fix All`
@@ -62,8 +69,13 @@ You may also add something like this in your `keymap.cson`:
 
 ```
 'atom-text-editor:not([mini])[data-grammar^="source elm"]':
-  'f6': 'linter-elm-make:quick-fix'
   'shift-f6': 'linter-elm-make:quick-fix-all'
+
+  # Add this to use the default UI:
+  'f6': 'linter-elm-make:quick-fix'
+
+  # Add this instead if you want to use the Intentions UI:
+  'f6': 'intentions:show'
 
 '.linter-elm-make atom-text-editor[mini]':
     'f6': 'core:confirm'
