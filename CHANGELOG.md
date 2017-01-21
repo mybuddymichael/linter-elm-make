@@ -1,3 +1,6 @@
+## 0.18.4
+* Allow integration with the [Intentions](https://atom.io/packages/intentions) package.
+
 ## 0.18.3
 * Put a try/catch when checking if a file exists.
 
