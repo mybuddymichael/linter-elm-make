@@ -58,7 +58,7 @@ Move your cursor to a problematic text range and invoke this command to show the
 
   * If you have [Intentions](https://atom.io/packages/intentions) installed, you can invoke `Intentions: Show` instead.
 
-  ![quick-fix-intentions](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/quick-fix-intentions.png?raw=true)
+  ![quick-fix-intentions](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/quick-fix-intentions.gif?raw=true)
 
 The number of available fixes for a given cursor position is shown in the status bar.
 
