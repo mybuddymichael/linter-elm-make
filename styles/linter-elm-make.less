@@ -6,6 +6,29 @@
     color: @text-color-info;
   }
 }
+// Since `Intentions` does not allow specifying HTML, do a workaround here:
+.linter-elm-make-fix-intention {
+  .linter-elm-make.fix-type;
+  display: inline;
+  font-size: @font-size;
+  font-family: @font-family;
+}
+.linter-elm-make-fix--replace-with::before {
+  .linter-elm-make-fix-intention;
+  content: "Replace with:";
+}
+.linter-elm-make-fix--add-type-annotation::before {
+  .linter-elm-make-fix-intention;
+  content: "Add type annotation:";
+}
+.linter-elm-make-fix--remove-unused-import::before {
+  .linter-elm-make-fix-intention;
+  content: "Remove unused import:";
+}
+.linter-elm-make-fix--add-import::before {
+  .linter-elm-make-fix-intention;
+  content: "Add import:";
+}
 .linter-elm-make.set-main-paths {
   .notes {
     padding: @component-padding;
