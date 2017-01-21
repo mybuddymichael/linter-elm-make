@@ -1,3 +1,6 @@
+## 0.18.5
+* Fix wrong file extension for intentions screen capture.
+
 ## 0.18.4
 * Allow integration with the [Intentions](https://atom.io/packages/intentions) package.
 
