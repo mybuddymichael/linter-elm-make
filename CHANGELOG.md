@@ -1,3 +1,6 @@
+## 0.19.0
+* Add `Show Inferred Type Annotations` option.
+
 ## 0.18.5
 * Fix wrong file extension for intentions screen capture.
 

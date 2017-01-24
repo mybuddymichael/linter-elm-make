@@ -34,6 +34,17 @@ If enabled, the main file(s) will always be compiled instead of the active file.
 #### `Report Warnings`
 Show `elm-make` warnings.  Enabled by default.
 
+#### `Show Inferred Type Annotations`
+Note: This will only work if `Report Warnings` is also checked.
+
+  * With `Lint On The Fly` disabled:
+
+  ![show-inferred-type-annotations](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/show-inferred-type-annotations.gif?raw=true)
+
+  * With `Lint On The Fly` enabled:
+
+  ![show-inferred-type-annotations-2](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/show-inferred-type-annotations-2.gif?raw=true)
+
 #### `Work Directory`
 - If this is not blank, the linter will copy the source files from the project directory into this directory and use this as the working directory for `elm-make`.  This can be an absolute path or relative to the path of `elm-package.json`.
 
