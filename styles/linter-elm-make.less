@@ -1,10 +1,8 @@
 @import "ui-variables";
 
-.linter-elm-make {
-  .fix-type {
-    padding-right: @component-padding;
-    color: @text-color-info;
-  }
+.linter-elm-make.fix-type {
+  padding-right: @component-padding;
+  color: @text-color-info;
 }
 // Since `Intentions` does not allow specifying HTML, do a workaround here:
 .linter-elm-make-fix-intention {
@@ -36,12 +34,23 @@
 }
 .linter-elm-make-issue {
   background: none;
+  border-top: 1px solid rgba(255,255,255,0.2);
 }
 .linter-elm-make-issue-selected {
+  .linter-elm-make-issue;
   background-color: @background-color-highlight;
   border-radius: @component-border-radius;
 }
 .linter-elm-make-inferred-type-annotation {
+  background-color: darken(@base-background-color, 2%);
   color: @text-color-subtle;
   font-style: italic;
+}
+.linter-elm-make-subregion-error .region {
+  // border-bottom: 1px solid @background-color-error;
+  background-color: fadeout(@background-color-error, 85%);
+}
+.linter-elm-make-subregion-warning .region {
+  // border-bottom: 1px solid @background-color-warning;
+  background-color: fadeout(@background-color-warning, 85%);
 }

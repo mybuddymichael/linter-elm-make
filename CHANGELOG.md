@@ -1,3 +1,7 @@
+## 0.20.0
+* Highlight problem subregion if available.
+* Make `Auto Scroll Issue Into View` choose the most specific problem range containing cursor position, not the first one.
+
 ## 0.19.0
 * Add `Show Inferred Type Annotations` option.
 
