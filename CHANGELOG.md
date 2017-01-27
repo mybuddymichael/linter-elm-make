@@ -1,4 +1,5 @@
 ## 0.20.0
+* Add styling and diffs to linter panel and inline tooltips.
 * Highlight problem subregion if available.
 * Make `Auto Scroll Issue Into View` choose the most specific problem range containing cursor position, not the first one.
 

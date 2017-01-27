@@ -46,23 +46,30 @@
   color: @text-color-subtle;
   font-style: italic;
 }
-.linter-elm-make-extra-hint {
-  color: @text-color;
-  // background-color: darken(@base-background-color, 2%);
-  background-color: fadeout(@background-color-error, 90%);
-}
-.linter-elm-make-diff-changed {
-  color: @text-color-error;
-  // text-decoration: underline;
-}
-.linter-elm-make-diff-added {
-  color: @text-color-success;
-  // text-decoration: underline;
-}
-.linter-elm-make-diff-removed {
-  color: @text-color-error;
-  // text-decoration: underline;
-}
 .linter-elm-make-problem-overview {
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+.linter-elm-make-details-info {
+  font-weight: bold;
+}
+.linter-elm-make-details-type,
+.linter-elm-make-details-name {
+  font-weight: bold;
+}
+.linter-elm-make-expected-type-diff-changed,
+.linter-elm-make-expected-name-diff-changed {
+  border-bottom: 1px dotted;
+}
+.linter-elm-make-actual-type-diff-changed,
+.linter-elm-make-actual-name-diff-changed {
+  border-bottom: 1px dotted;
+  color: @background-color-error;
+  // color: @text-color-error;
+}
+.linter-elm-make-details-hint {
+}
+.linter-elm-make-details-hint-label {
+  .octicon(light-bulb);
   font-weight: bold;
 }
