@@ -41,9 +41,12 @@
   background-color: @background-color-highlight;
   border-radius: @component-border-radius;
 }
-.linter-elm-make-inferred-type-annotation,
-.linter-elm-make-extra-hint {
-  background-color: darken(@base-background-color, 2%);
+.linter-elm-make-inferred-type-annotation {
   color: @text-color-subtle;
   font-style: italic;
+}
+.linter-elm-make-extra-hint {
+  color: @text-color-subtle;
+  // background-color: darken(@base-background-color, 2%);
+  background-color: fadeout(@background-color-error, 90%);
 }
