@@ -1,10 +1,9 @@
 @import "ui-variables";
+@import "octicon-mixins";
 
-.linter-elm-make {
-  .fix-type {
-    padding-right: @component-padding;
-    color: @text-color-info;
-  }
+.linter-elm-make.fix-type {
+  padding-right: @component-padding;
+  color: @text-color-info;
 }
 // Since `Intentions` does not allow specifying HTML, do a workaround here:
 .linter-elm-make-fix-intention {
@@ -36,12 +35,41 @@
 }
 .linter-elm-make-issue {
   background: none;
+  // border-top: 1px solid rgba(255,255,255,0.2);
 }
 .linter-elm-make-issue-selected {
+  .linter-elm-make-issue;
   background-color: @background-color-highlight;
   border-radius: @component-border-radius;
 }
 .linter-elm-make-inferred-type-annotation {
   color: @text-color-subtle;
   font-style: italic;
+}
+.linter-elm-make-problem-overview {
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+.linter-elm-make-details-info {
+  font-weight: bold;
+}
+.linter-elm-make-details-type,
+.linter-elm-make-details-name {
+  font-weight: bold;
+}
+.linter-elm-make-expected-type-diff-changed,
+.linter-elm-make-expected-name-diff-changed {
+  border-bottom: 1px dotted;
+}
+.linter-elm-make-actual-type-diff-changed,
+.linter-elm-make-actual-name-diff-changed {
+  border-bottom: 1px dotted;
+  color: @background-color-error;
+  // color: @text-color-error;
+}
+.linter-elm-make-details-hint {
+}
+.linter-elm-make-details-hint-label {
+  .octicon(light-bulb);
+  font-weight: bold;
 }
