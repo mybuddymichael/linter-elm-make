@@ -1,3 +1,7 @@
+## 0.20.1
+* More styling.
+* Fix bug where inferred type annotations are not properly removed.
+
 ## 0.20.0
 * Add styling and diffs to linter panel and inline tooltips.
 * Highlight problem subregion if available.
