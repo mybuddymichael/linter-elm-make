@@ -35,7 +35,6 @@
 }
 .linter-elm-make-issue {
   background: none;
-  // border-top: 1px solid rgba(255,255,255,0.2);
 }
 .linter-elm-make-issue-selected {
   .linter-elm-make-issue;
@@ -50,26 +49,61 @@
   font-weight: bold;
   border-bottom: 1px solid;
 }
+.linter-elm-make-details-emphasized {
+  font-weight: bold;
+}
 .linter-elm-make-details-info {
   font-weight: bold;
+  color: @text-color-info;
 }
 .linter-elm-make-details-type,
 .linter-elm-make-details-name {
+  display: inline-block;
   font-weight: bold;
+}
+.linter-elm-make-details-type {
+  padding-left: @component-padding * 3;
+}
+.linter-elm-make-details-expected-type {
+  .linter-elm-make-details-type;
+}
+.linter-elm-make-details-expected-name {
+  .linter-elm-make-details-name;
+}
+.linter-elm-make-details-actual-type {
+  .linter-elm-make-details-type;
+}
+.linter-elm-make-details-actual-name {
+  .linter-elm-make-details-name;
 }
 .linter-elm-make-expected-type-diff-changed,
 .linter-elm-make-expected-name-diff-changed {
-  border-bottom: 1px dotted;
+  border-bottom: 1px dotted fadeout(@text-color-success, 25%);
+  color: @text-color-success;
 }
 .linter-elm-make-actual-type-diff-changed,
 .linter-elm-make-actual-name-diff-changed {
-  border-bottom: 1px dotted;
-  color: @background-color-error;
-  // color: @text-color-error;
+  border-bottom: 1px dotted fadeout(@text-color-error, 25%);
+  color: @text-color-error;
 }
 .linter-elm-make-details-hint {
 }
 .linter-elm-make-details-hint-label {
   .octicon(light-bulb);
+  color: @text-color-info;
   font-weight: bold;
+}
+// Make inline tooltip look like the linter panel.
+atom-text-editor:not([mini])[data-grammar="source elm"] {
+  linter-message {
+    font-size: 90%;
+    background-color: @base-background-color;
+    color: @text-color;
+    linter-message-line {
+      a {
+        color: @text-color !important;
+        .octicon(link-external);
+      }
+    }
+  }
 }

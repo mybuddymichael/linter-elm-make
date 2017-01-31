@@ -1,3 +1,8 @@
+## 0.21.0
+* Change inline tooltip style to match linter panel.
+* More styling.
+* Fix bug where inferred type annotations are not properly removed.
+
 ## 0.20.0
 * Add styling and diffs to linter panel and inline tooltips.
 * Highlight problem subregion if available.
