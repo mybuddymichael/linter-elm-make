@@ -4,7 +4,7 @@ https://atom.io/packages/linter-elm-make
 
 Lint your Elm files in Atom with [linter](https://atom.io/packages/linter) and `elm-make`.
 
-![diffs](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/diffs.gif?raw=true)
+![diffs](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/diffs.png?raw=true)
 
 ## Installation
 
