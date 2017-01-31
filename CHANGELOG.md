@@ -1,4 +1,5 @@
-## 0.20.1
+## 0.21.0
+* Change inline tooltip style to match linter panel.
 * More styling.
 * Fix bug where inferred type annotations are not properly removed.
 
