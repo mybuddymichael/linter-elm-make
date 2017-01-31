@@ -1,7 +1,12 @@
+## 0.21.1
+* Fix `Auto Scroll Issue Into View` regression bug.
+* Escape links in messages.
+* More styling.
+
 ## 0.21.0
 * Change inline tooltip style to match linter panel.
-* More styling.
 * Fix bug where inferred type annotations are not properly removed.
+* More styling.
 
 ## 0.20.0
 * Add styling and diffs to linter panel and inline tooltips.
