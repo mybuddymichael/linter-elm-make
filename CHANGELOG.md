@@ -1,3 +1,7 @@
+## 0.22.0
+* Add `Rename module` quick fix.
+* More styling.
+
 ## 0.21.1
 * Fix `Auto Scroll Issue Into View` regression bug.
 * Escape links in messages.
