@@ -75,7 +75,15 @@ Move your cursor to a problematic text range and invoke this command to show the
 
   ![quick-fix-intentions](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/quick-fix-intentions.gif?raw=true)
 
-The number of available fixes for a given cursor position is shown in the status bar.
+The number of available fixes for a given cursor position is shown with the linter tooltip and in the status bar.
+
+  * ##### Available Quick Fixes
+    * Rename with
+    * Add type annotation
+    * Remove unused import
+    * Add import
+    * Add missing patterns
+    * Fix module name
 
 #### `Linter Elm Make: Quick Fix All`
 Fixes all issues in the active text editor in one go. If there is more than one fix for an issue, it will choose the first from the list.

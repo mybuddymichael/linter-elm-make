@@ -1,9 +1,11 @@
 @import "ui-variables";
 @import "octicon-mixins";
 
-.linter-elm-make.fix-type {
-  padding-right: @component-padding;
-  color: @text-color-info;
+.linter-elm-make {
+  .fix-type {
+    padding-right: @component-padding;
+    color: @text-color-info;
+  }
 }
 // Since `Intentions` does not allow specifying HTML, do a workaround here:
 .linter-elm-make-fix-intention {
@@ -28,10 +30,18 @@
   .linter-elm-make-fix-intention;
   content: "Add import:";
 }
-.linter-elm-make-fix--rename-module::before {
+.linter-elm-make-fix--add-missing-patterns::before {
   .linter-elm-make-fix-intention;
-  content: "Rename module:";
+  content: "Add missing patterns:";
 }
+.linter-elm-make-fix--fix-module-name::before {
+  .linter-elm-make-fix-intention;
+  content: "Fix module name:";
+}
+// .linter-elm-make-fix--remove-redundant-patterns::before {
+//   .linter-elm-make-fix-intention;
+//   content: "Remove redundant patterns:";
+// }
 .linter-elm-make.set-main-paths {
   .notes {
     padding: @component-padding;
@@ -83,11 +93,13 @@
 .linter-elm-make-expected-type-diff-changed,
 .linter-elm-make-expected-name-diff-changed {
   border-bottom: 1px dotted fadeout(@text-color-success, 25%);
+  padding-bottom: 1px;
   color: @text-color-success;
 }
 .linter-elm-make-actual-type-diff-changed,
 .linter-elm-make-actual-name-diff-changed {
   border-bottom: 1px dotted fadeout(@text-color-error, 25%);
+  padding-bottom: 1px;
   color: @text-color-error;
 }
 .linter-elm-make-details-hint {
@@ -96,6 +108,20 @@
   .octicon(light-bulb);
   color: @text-color-info;
   font-weight: bold;
+}
+.linter-elm-make-quick-fixes-tooltip {
+  .tooltip-inner {
+    .octicon(tools);
+    background-color: darken(@base-background-color, 1%) !important;
+    color: @text-color !important;
+    font-size: 80% !important;
+  }
+  .tooltip-arrow {
+    border: none;
+  }
+}
+.linter-elm-make-quick-fixes-status {
+  .octicon(tools);
 }
 // Make inline tooltip look like the linter panel.
 atom-text-editor:not([mini])[data-grammar="source elm"] {
