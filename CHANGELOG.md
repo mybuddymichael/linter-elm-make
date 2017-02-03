@@ -1,3 +1,9 @@
+## 0.22.0
+* Add `Add missing patterns` quick fix.
+* Add `Fix module name` quick fix.
+* Show number of quick fixes with the linter tooltip.
+* More styling.
+
 ## 0.21.1
 * Fix `Auto Scroll Issue Into View` regression bug.
 * Escape links in messages.
