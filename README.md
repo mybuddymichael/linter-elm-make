@@ -77,8 +77,8 @@ Move your cursor to a problematic text range and invoke this command to show the
 
 The number of available fixes for a given cursor position is shown with the linter tooltip and in the status bar.
 
-  * ##### Available Quick Fixes
-    * Rename with
+  * Available Quick Fixes
+    * Replace with
     * Add type annotation
     * Remove unused import
     * Add import
