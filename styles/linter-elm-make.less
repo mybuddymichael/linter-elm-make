@@ -105,23 +105,27 @@
 .linter-elm-make-details-hint {
 }
 .linter-elm-make-details-hint-label {
-  .octicon(light-bulb);
+  .octicon(info);
   color: @text-color-info;
   font-weight: bold;
 }
 .linter-elm-make-quick-fixes-tooltip {
   .tooltip-inner {
-    .octicon(tools);
-    background-color: darken(@base-background-color, 1%) !important;
-    color: @text-color !important;
-    font-size: 80% !important;
+    .octicon(light-bulb);
+    padding: 4px !important;
+    margin: 4px !important;
+    background-color: @base-background-color !important;
+    color: @text-color-info !important;
+    font-weight: bold;
+    border: 1px solid @text-color;
   }
   .tooltip-arrow {
     border: none;
   }
 }
 .linter-elm-make-quick-fixes-status {
-  .octicon(tools);
+  .octicon(light-bulb);
+  color: @text-color-info;
 }
 // Make inline tooltip look like the linter panel.
 atom-text-editor:not([mini])[data-grammar="source elm"] {

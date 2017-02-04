@@ -1,3 +1,7 @@
+## 0.22.1
+* Change quick fix icon to the standard light bulb.
+* Move quick fix icon to the left of linter tooltip.
+
 ## 0.22.0
 * Add `Add missing patterns` quick fix.
 * Add `Fix module name` quick fix.
