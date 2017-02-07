@@ -88,22 +88,6 @@ The number of available fixes for a given cursor position is shown with the lint
 #### `Linter Elm Make: Quick Fix All`
 Fixes all issues in the active text editor in one go. If there is more than one fix for an issue, it will choose the first from the list.
 
-You may also add something like this in your `keymap.cson`:
-
-```
-'atom-text-editor:not([mini])[data-grammar^="source elm"]':
-  'shift-f6': 'linter-elm-make:quick-fix-all'
-
-  # Add this to use the default UI:
-  'f6': 'linter-elm-make:quick-fix'
-
-  # Add this instead if you want to use the Intentions UI:
-  'f6': 'intentions:show'
-
-'.linter-elm-make atom-text-editor[mini]':
-    'f6': 'core:confirm'
-```
-
 #### `Linter Elm Make: Set Main Paths`
 Sets the main paths of the project and saves them to `linter-elm-make.json`.
 
@@ -123,6 +107,26 @@ Deletes the `.elmi` and `.elmo` files in your project's build artifacts director
 #### `Linter Elm Make: Toggle Always Compile Main`
 
 #### `Linter Elm Make: Toggle Report Warnings`
+
+## Keybindings
+
+Here is an example:
+
+```
+'atom-text-editor:not([mini])[data-grammar^="source elm"]':
+  'shift-f6': 'linter-elm-make:quick-fix-all'
+
+  # Add this to use the default UI:
+  'f6': 'linter-elm-make:quick-fix'
+
+  # Add this instead if you want to use the Intentions UI:
+  'f6': 'intentions:show'
+
+'.linter-elm-make atom-text-editor[mini]':
+    'f6': 'core:confirm'
+```
+
+Add them to your `keymap.cson` or bind them from `Settings` > `Keybindings`.
 
 ## Useful [linter](https://atom.io/packages/linter) Commands
 

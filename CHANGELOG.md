@@ -1,3 +1,7 @@
+## 0.22.2
+* Remove "Elm" label in linter panel and linter tooltip to minimize space requirement.
+* Made linter tooltip a bit translucent to see a semblance of the code underneath.
+
 ## 0.22.1
 * Change quick fix icon to the standard light bulb.
 * Move quick fix icon to the left of linter tooltip.
