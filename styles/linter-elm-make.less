@@ -94,13 +94,13 @@
 .linter-elm-make-expected-name-diff-changed {
   border-bottom: 1px dotted fadeout(@text-color-success, 25%);
   padding-bottom: 1px;
-  color: @text-color-success;
+  color: @text-color-success !important; // `!important` is needed to make this work in `Atom Material` UI theme.
 }
 .linter-elm-make-actual-type-diff-changed,
 .linter-elm-make-actual-name-diff-changed {
   border-bottom: 1px dotted fadeout(@text-color-error, 25%);
   padding-bottom: 1px;
-  color: @text-color-error;
+  color: @text-color-error !important; // `!important` is needed to make this work in `Atom Material` UI theme.
 }
 .linter-elm-make-details-hint {
 }
@@ -129,14 +129,27 @@
 }
 // Make inline tooltip look like the linter panel.
 atom-text-editor:not([mini])[data-grammar="source elm"] {
-  linter-message {
-    font-size: 90%;
-    background-color: @base-background-color;
-    color: @text-color;
-    linter-message-line {
-      a {
-        color: @text-color !important;
-        .octicon(link-external);
+  #linter-inline {
+    // Arrow pointer
+    &::before {
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: fadeout(@text-color, 15%);
+      border-left-color: fadeout(@text-color, 15%);
+    }
+    background-color: fadeout(@base-background-color, 15%) !important;
+    border: 2px solid fadeout(@text-color, 15%) !important;
+    linter-message {
+      font-size: 90%;
+      span:last-child {
+        color: @text-color;
+      }
+      linter-message-line {
+        a {
+          color: @text-color-subtle !important;
+          text-decoration: underline;
+          .octicon(link-external);
+        }
       }
     }
   }
