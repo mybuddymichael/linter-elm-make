@@ -1,3 +1,6 @@
+## 0.22.3
+* Better lint task queuing.
+
 ## 0.22.2
 * Remove "Elm" label in linter panel and linter tooltip to minimize space requirement.
 * Made linter tooltip a bit translucent to see a semblance of the code underneath.
