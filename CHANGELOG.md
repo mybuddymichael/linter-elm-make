@@ -1,3 +1,6 @@
+## 0.22.4
+* Fix issue where the text of the quick fixes tooltip is not visible when using some UI themes.  Thanks to @AntouanK for reporting!
+
 ## 0.22.3
 * Better lint task queuing.
 
