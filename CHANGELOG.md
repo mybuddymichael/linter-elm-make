@@ -1,3 +1,7 @@
+## 0.22.5
+* Make `Set Main Paths` work again (#130).  Thanks to @raffomania for reporting!
+* Styling fixes.
+
 ## 0.22.4
 * Fix issue where the text of the quick fixes tooltip is not visible when using some UI themes.  Thanks to @AntouanK for reporting!
 
