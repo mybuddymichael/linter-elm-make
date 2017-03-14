@@ -26,7 +26,7 @@ Lint your Elm files in Atom with [linter](https://atom.io/packages/linter) and `
 ## Configuration
 
 #### `Lint On The Fly`
-By default, linting is only done after saving the file.  If you want to lint while typing, turn on the `Lint On The Fly` option in the package settings.  Also make sure that the `Lint As You Type` option is enabled in the [linter](https://atom.io/packages/linter) package settings.
+By default, linting is only done after saving the file.  If you want to lint while typing, turn on the `Lint On The Fly` option in the package settings.  Also make sure that the `Lint on Change` option (`Lint As You Type` for Linter v1) is enabled in the [linter](https://atom.io/packages/linter) package settings.
 
 NOTE: Linting on the fly is experimental and currently works by copying the source files to the `Work Directory` (or to a temporary directory if `Work Directory` is blank) and running `elm-make` there.
 
@@ -132,12 +132,18 @@ Add them to your `keymap.cson` or bind them from `Settings` > `Keybindings`.
 
 #### `Linter: Lint`
 
-#### `Linter: Next Error`
+Linter v2:
+* #### `Linter Ui Default: Next`
+* #### `Linter Ui Default: Previous`
+* #### `Linter Ui Default: Toggle Active Editor`
 
-#### `Linter: Previous Error`
+Linter v1:
+* #### `Linter: Next Error`
+* #### `Linter: Previous Error`
+* #### `Linter: Toggle`
 
-#### `Linter: Toggle`
+## Notes
 
-## Prior Art
+* Also check out the settings view for the `linter` and `linter-ui-default` (for Linter v2) packages for the available options.
 
-The boilerplate code here is repurposed from [linter-hlint](https://github.com/AtomLinter/linter-hlint). Much thanks to its [contributors](https://github.com/AtomLinter/linter-hlint/graphs/contributors).
+* The boilerplate code here is repurposed from [linter-hlint](https://github.com/AtomLinter/linter-hlint). Much thanks to its [contributors](https://github.com/AtomLinter/linter-hlint/graphs/contributors).
