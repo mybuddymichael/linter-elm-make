@@ -1,3 +1,10 @@
+## 0.23.0
+* Fix styling issues when using Linter v2.
+* Fix "Add import" quick fix bug (#133).  Thanks to @pacbeckh for reporting!
+
+## 0.22.6
+* Styling fixes.
+
 ## 0.22.5
 * Make `Set Main Paths` work again (#130).  Thanks to @raffomania for reporting!
 * Styling fixes.

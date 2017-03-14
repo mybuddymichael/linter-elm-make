@@ -127,18 +127,33 @@
   .octicon(light-bulb);
   color: @text-color-info;
 }
+.linter-elm-make-tooltip {
+  background-color: fadeout(@base-background-color, 15%) !important;
+  border: 2px solid fadeout(@text-color, 15%) !important;
+  // Arrow pointer
+  &::before {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: fadeout(@text-color, 15%);
+    border-left-color: fadeout(@text-color, 15%);
+  }
+}
+.linter-elm-make-tooltip-link {
+  color: @text-color-subtle !important;
+  text-decoration: underline;
+  .octicon(link-external);
+}
 // Make inline tooltip look like the linter panel.
 atom-text-editor:not([mini])[data-grammar="source elm"] {
-  #linter-inline {
-    // Arrow pointer
-    &::before {
-      border-top-color: transparent;
-      border-right-color: transparent;
-      border-bottom-color: fadeout(@text-color, 15%);
-      border-left-color: fadeout(@text-color, 15%);
+  #linter-tooltip linter-message.error {
+    .linter-elm-make-tooltip;
+    color: @text-color;
+    a {
+      .linter-elm-make-tooltip-link;
     }
-    background-color: fadeout(@base-background-color, 15%) !important;
-    border: 2px solid fadeout(@text-color, 15%) !important;
+  }
+  #linter-inline {
+    .linter-elm-make-tooltip;
     linter-message {
       font-size: 90%;
       span:last-child {
@@ -146,9 +161,7 @@ atom-text-editor:not([mini])[data-grammar="source elm"] {
       }
       linter-message-line {
         a {
-          color: @text-color-subtle !important;
-          text-decoration: underline;
-          .octicon(link-external);
+          .linter-elm-make-tooltip-link;
         }
       }
     }
