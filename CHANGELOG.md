@@ -1,3 +1,7 @@
+## 0.23.1
+* Fix issue with the number of quick fixes (near tooltip) not showing in Linter v2.
+* Adjust placement of "Linting..." and "Quick Fixes" indicators (status bar).
+
 ## 0.23.0
 * Fix styling issues when using Linter v2.
 * Fix "Add import" quick fix bug (#133).  Thanks to @pacbeckh for reporting!

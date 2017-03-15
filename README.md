@@ -133,14 +133,14 @@ Add them to your `keymap.cson` or bind them from `Settings` > `Keybindings`.
 #### `Linter: Lint`
 
 Linter v2:
-* #### `Linter Ui Default: Next`
-* #### `Linter Ui Default: Previous`
-* #### `Linter Ui Default: Toggle Active Editor`
+* `Linter Ui Default: Next`
+* `Linter Ui Default: Previous`
+* `Linter Ui Default: Toggle Active Editor`
 
 Linter v1:
-* #### `Linter: Next Error`
-* #### `Linter: Previous Error`
-* #### `Linter: Toggle`
+* `Linter: Next Error`
+* `Linter: Previous Error`
+* `Linter: Toggle`
 
 ## Notes
 
