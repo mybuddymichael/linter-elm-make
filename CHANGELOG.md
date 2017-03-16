@@ -1,3 +1,6 @@
+## 0.23.2
+* Fix tooltip background color for warnings.
+
 ## 0.23.1
 * Fix issue with the number of quick fixes (near tooltip) not showing in Linter v2.
 * Adjust placement of "Linting..." and "Quick Fixes" indicators (status bar).
