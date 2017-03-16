@@ -141,11 +141,11 @@
 .linter-elm-make-tooltip-link {
   color: @text-color-subtle !important;
   text-decoration: underline;
-  .octicon(link-external);
+  // .octicon(link-external);
 }
 // Make inline tooltip look like the linter panel.
 atom-text-editor:not([mini])[data-grammar="source elm"] {
-  #linter-tooltip linter-message.error {
+  #linter-tooltip linter-message {
     .linter-elm-make-tooltip;
     color: @text-color;
     a {
