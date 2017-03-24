@@ -128,6 +128,7 @@
   color: @text-color-info;
 }
 .linter-elm-make-tooltip {
+  font-size: 90%;
   background-color: fadeout(@base-background-color, 15%) !important;
   border: 2px solid fadeout(@text-color, 15%) !important;
   // Arrow pointer
@@ -155,7 +156,6 @@ atom-text-editor:not([mini])[data-grammar="source elm"] {
   #linter-inline {
     .linter-elm-make-tooltip;
     linter-message {
-      font-size: 90%;
       span:last-child {
         color: @text-color;
       }
