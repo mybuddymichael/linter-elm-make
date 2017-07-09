@@ -1,3 +1,6 @@
+## 0.23.4
+* Fix integration with [Nuclide](https://atom.io/packages/nuclide) diagnostics (#88). Thanks to @denisw for reporting!
+
 ## 0.23.3
 * Remove the hacky `Auto Scroll Issue Into View` option.  Check out the `Tooltip Follows` option of `linter-ui-default` instead.
 
