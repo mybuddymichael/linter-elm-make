@@ -1,3 +1,6 @@
+## 0.23.5
+* Fix minor styling issue.
+
 ## 0.23.4
 * Fix integration with [Nuclide](https://atom.io/packages/nuclide) diagnostics (#88). Thanks to @denisw for reporting!
 
