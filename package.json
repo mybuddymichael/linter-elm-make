@@ -18,8 +18,14 @@
     "path": "^0.12.7",
     "readdir": "0.0.13",
     "tmp": "0.0.28",
-    "underscore": "1.8.3"
+    "underscore": "1.8.3",
+    "atom-package-deps": "^4.6.0"
   },
+  "package-deps": [
+    "language-elm",
+    "linter",
+    "linter-ui-default"
+  ],
   "providedServices": {
     "linter": {
       "versions": {

@@ -1,3 +1,6 @@
+## 0.23.6
+* Use [atom-package-deps](https://www.npmjs.com/package/atom-package-deps) to automatically install the minimum required packages (#89).
+
 ## 0.23.5
 * Fix minor styling issue.
 
