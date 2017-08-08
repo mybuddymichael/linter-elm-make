@@ -1,3 +1,7 @@
+## 0.23.7
+* Copy native modules to the work directory when `Lint On The Fly` is enabled (#122).  Thanks to @iteloo for reporting and to @QuinnFreedman for the fix!
+* Upgrade package dependencies.
+
 ## 0.23.6
 * Use [atom-package-deps](https://www.npmjs.com/package/atom-package-deps) to automatically install the minimum required packages (#89).
 
