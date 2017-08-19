@@ -3,6 +3,7 @@
   "main": "./lib/linter-elm-make.js",
   "version": "0.23.7",
   "description": "Lint Elm code with elm-make",
+  "activationCommands": {},
   "repository": "https://github.com/mybuddymichael/linter-elm-make",
   "license": "MIT",
   "engines": {
