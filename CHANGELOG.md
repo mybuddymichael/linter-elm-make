@@ -1,3 +1,6 @@
+## 0.24.0
+* Add `Timeout` setting.  Thanks to @raffomania for reporting and @MethodGrab for the PR!
+
 ## 0.23.8
 * Fix "Incompatible Packages" issue.
 
