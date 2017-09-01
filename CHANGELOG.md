@@ -1,3 +1,6 @@
+## 0.24.1
+* Fix `Timeout` setting issue.  Thanks to @MethodGrab!
+
 ## 0.24.0
 * Add `Timeout` setting.  Thanks to @raffomania for reporting and @MethodGrab for the PR!
 
