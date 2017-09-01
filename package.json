@@ -12,7 +12,6 @@
   "dependencies": {
     "atom-linter": "10.0.0",
     "atom-space-pen-views": "2.2.0",
-    "better-queue": "3.8.5",
     "chokidar": "1.7.0",
     "diff": "3.3.0",
     "fs-extra": "0.30.0",
