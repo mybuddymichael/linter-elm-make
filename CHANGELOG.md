@@ -1,3 +1,8 @@
+## 0.24.2
+* Use [`atom-linter`](https://www.npmjs.com/package/atom-linter)'s `uniqueKey` in lieu of the lint task queue.
+* If the text range of an issue is empty (start point is equal to end point), include the next character.
+* Fix styling issues.
+
 ## 0.24.1
 * Fix `Timeout` setting issue.  Thanks to @MethodGrab!
 
