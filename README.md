@@ -17,7 +17,7 @@ Lint your Elm files in Atom with [linter](https://atom.io/packages/linter) and `
   apm install linter-elm-make
   ```
 
-  * If you want to use [Nuclide](https://atom.io/packages/nuclide) in lieu of [linter](https://atom.io/packages/linter), check this [compatibility guide](https://nuclide.io/docs/advanced-topics/linter-package-compatibility).
+  * If you want to use [Nuclide](https://atom.io/packages/nuclide) in lieu of [linter](https://atom.io/packages/linter), check this [compatibility guide](https://nuclide.io/docs/advanced-topics/linter-package-compatibility).  You may also use [atom-ide-ui](https://atom.io/packages/atom-ide-ui) instead.
 
   * You can also use the [Intentions](https://atom.io/packages/intentions) package instead of the default `Quick Fix` UI.
 

@@ -1,3 +1,6 @@
+## 0.24.4
+* Add `atom-ide-ui` integration.  Thanks to @dtinth for reporting!
+
 ## 0.24.3
 * Fix #152.  Thanks to @christianbradley for reporting!
 * Fix minor issues.
