@@ -1,3 +1,6 @@
+## 0.25.0
+* Add code actions integration (for `atom-ide-ui`).
+
 ## 0.24.4
 * Add `atom-ide-ui` integration.  Thanks to @dtinth for reporting!
 

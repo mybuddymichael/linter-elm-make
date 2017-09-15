@@ -71,9 +71,13 @@ Move your cursor to a problematic text range and invoke this command to show the
 
 ![quick-fix](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/quick-fix.png?raw=true)
 
-  * If you have [Intentions](https://atom.io/packages/intentions) installed, you can invoke `Intentions: Show` instead.
+  * If you have [Intentions](https://atom.io/packages/intentions) installed, you can invoke the `Intentions: Show` command instead.
 
   ![quick-fix-intentions](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/quick-fix-intentions.gif?raw=true)
+
+  * If you have [atom-ide-ui](https://atom.io/packages/atom-ide-ui) installed, you can invoke the `Diagnostics: Show Actions At Position` command instead, or click on the appropriate button from the panel.
+
+  ![quick-fix-diagnostics](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/quick-fix-diagnostics.gif?raw=true)
 
 The number of available fixes for a given cursor position is shown with the linter tooltip and in the status bar.
 
@@ -121,6 +125,9 @@ Here is an example:
 
   # Add this instead if you want to use the Intentions UI:
   'f6': 'intentions:show'
+
+  # Add this instead if you want to use `atom-ide-ui`:
+  'f6': 'diagnostics:show-actions-at-position'
 
 '.linter-elm-make atom-text-editor[mini]':
     'f6': 'core:confirm'
