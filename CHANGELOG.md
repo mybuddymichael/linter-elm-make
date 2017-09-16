@@ -1,3 +1,6 @@
+## 0.25.1
+* After applying a quick fix, do not clear the other fixes when not linting on the fly.
+
 ## 0.25.0
 * Add code actions integration (for `atom-ide-ui`).
 
