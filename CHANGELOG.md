@@ -1,3 +1,6 @@
+## 0.25.2
+* Reactivate pane after applying quick fix.
+
 ## 0.25.1
 * After applying a quick fix, do not clear the other fixes when not linting on the fly.
 

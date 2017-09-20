@@ -20,7 +20,8 @@
     "tmp": "0.0.31",
     "underscore": "1.8.3",
     "atom-package-deps": "4.6.0",
-    "atom-languageclient": "^0.6.1"
+    "atom-languageclient": "^0.6.1",
+    "react": "15.6.1"
   },
   "package-deps": [
     "language-elm",
@@ -42,17 +43,17 @@
       "versions": {
         "1.0.0": "provideGetWorkDirectory"
       }
-    },
-    "code-actions": {
-      "versions": {
-        "0.1.0": "provideCodeActions"
-      }
     }
   },
   "consumedServices": {
     "status-bar": {
       "versions": {
         "^1.0.0": "consumeStatusBar"
+      }
+    },
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatipService"
       }
     }
   }
