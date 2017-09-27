@@ -21,14 +21,16 @@
     "underscore": "1.8.3",
     "atom-package-deps": "4.6.0",
     "atom-languageclient": "^0.6.1",
-    "react": "15.6.1"
+    "react": "15.6.1",
+    "react-dom": "15.6.1"
   },
-  "package-deps": [
-    "language-elm",
-    "linter",
-    "linter-ui-default"
-  ],
+  "package-deps": ["language-elm", "linter", "linter-ui-default"],
   "providedServices": {
+    "linter-elm-make.getWorkDirectory": {
+      "versions": {
+        "1.0.0": "provideGetWorkDirectory"
+      }
+    },
     "linter": {
       "versions": {
         "1.0.0": "provideLinter"
@@ -39,13 +41,23 @@
         "1.0.0": "provideIntentions"
       }
     },
-    "linter-elm-make.getWorkDirectory": {
+    "code-actions": {
       "versions": {
-        "1.0.0": "provideGetWorkDirectory"
+        "0.1.0": "provideCodeActions"
       }
     }
   },
   "consumedServices": {
+    "elmjutsu.getTokenInfo": {
+      "versions": {
+        "1.0.0": "consumeGetTokenInfo"
+      }
+    },
+    "elmjutsu.goToDefinition": {
+      "versions": {
+        "1.0.0": "consumeGoToDefinition"
+      }
+    },
     "status-bar": {
       "versions": {
         "^1.0.0": "consumeStatusBar"

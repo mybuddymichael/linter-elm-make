@@ -1,5 +1,9 @@
+## 0.25.3
+* Fix bug regarding "++" quick fixes.
+* Add "toString" quick fixes.
+
 ## 0.25.2
-* Reactivate pane after applying quick fix.
+* Reactivate pane after applying quick fix (when using `atom-ide-ui`).
 
 ## 0.25.1
 * After applying a quick fix, do not clear the other fixes when not linting on the fly.

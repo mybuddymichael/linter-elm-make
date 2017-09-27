@@ -1,5 +1,5 @@
-@import "ui-variables";
-@import "octicon-mixins";
+@import 'ui-variables';
+@import 'octicon-mixins';
 
 .linter-elm-make {
   .fix-type {
@@ -16,27 +16,27 @@
 }
 .linter-elm-make-fix--replace-with::before {
   .linter-elm-make-fix-intention;
-  content: "Replace with:";
+  content: 'Replace with:';
 }
 .linter-elm-make-fix--add-type-annotation::before {
   .linter-elm-make-fix-intention;
-  content: "Add type annotation:";
+  content: 'Add type annotation:';
 }
 .linter-elm-make-fix--remove-unused-import::before {
   .linter-elm-make-fix-intention;
-  content: "Remove unused import:";
+  content: 'Remove unused import:';
 }
 .linter-elm-make-fix--add-import::before {
   .linter-elm-make-fix-intention;
-  content: "Add import:";
+  content: 'Add import:';
 }
 .linter-elm-make-fix--add-missing-patterns::before {
   .linter-elm-make-fix-intention;
-  content: "Add missing patterns:";
+  content: 'Add missing patterns:';
 }
 .linter-elm-make-fix--fix-module-name::before {
   .linter-elm-make-fix-intention;
-  content: "Fix module name:";
+  content: 'Fix module name:';
 }
 // .linter-elm-make-fix--remove-redundant-patterns::before {
 //   .linter-elm-make-fix-intention;
@@ -63,7 +63,7 @@
   font-weight: bold;
   border-bottom: 1px dotted;
 }
-.linter-elm-make-details-emphasized {
+.linter-elm-make-details-emphasis {
   font-weight: bold;
 }
 .linter-elm-make-details-info {
@@ -145,7 +145,7 @@
   // .octicon(link-external);
 }
 // Make inline tooltip look like the linter panel.
-atom-text-editor:not([mini])[data-grammar="source elm"] {
+atom-text-editor:not([mini])[data-grammar='source elm'] {
   #linter-tooltip linter-message {
     .linter-elm-make-tooltip;
     color: @text-color;
@@ -171,4 +171,22 @@ atom-text-editor:not([mini])[data-grammar="source elm"] {
   white-space: pre;
   font-family: monospace;
   font-size: 90%;
+}
+.linter-elm-make-region-range-error {
+  background-color: fadeout(@background-color-error, 80%);
+}
+.linter-elm-make-region-range-warning {
+  background-color: fadeout(@background-color-warning, 80%);
+}
+.linter-elm-make-token-actionable {
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: @component-border-radius;
+    cursor: pointer;
+  }
+  &:active {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: @component-border-radius;
+    cursor: pointer;
+  }
 }
