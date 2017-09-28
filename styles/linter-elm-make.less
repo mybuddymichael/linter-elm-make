@@ -71,11 +71,13 @@
   color: @text-color-info;
 }
 .linter-elm-make-details-type,
-.linter-elm-make-details-name {
+.linter-elm-make-details-name,
+.linter-elm-make-details-suggestions {
   display: inline-block;
   font-weight: bold;
 }
-.linter-elm-make-details-type {
+.linter-elm-make-details-type,
+.linter-elm-make-details-suggestions {
   padding-left: @component-padding * 3;
 }
 .linter-elm-make-details-expected-type {
@@ -186,5 +188,33 @@ atom-text-editor:not([mini])[data-grammar='source elm'] {
   &:active {
     background-color: rgba(255, 255, 255, 0.3);
     cursor: pointer;
+  }
+}
+.linter-elm-make-quick-fixes {
+  margin-top: @component-padding;
+}
+.linter-elm-make-quick-fix-button {
+  width: 100%;
+  margin: 1px;
+  background-color: @button-background-color;
+  border: none;
+  border-radius: @component-border-radius;
+  cursor: pointer;
+  text-align: left;
+  &:hover {
+    background-color: @button-background-color-hover;
+  }
+  &:active {
+    background-color: lighten(@button-background-color-hover, 10%);
+  }
+  .icon {
+    .octicon(light-bulb);
+  }
+  .fix-type {
+    color: @text-color-info;
+  }
+  .fix-text {
+    color: @text-color;
+    font-weight: bold;
   }
 }
