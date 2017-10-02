@@ -1,7 +1,9 @@
 ## 0.26.0
 * Fix bug regarding "++" quick fixes.
 * Add `Use Datatips` option.
-* Add `Run elm package install` quick fix.
+* Add `Run elm package install` quick fix (when elm-stuff is not found).
+* Add `Define top-level` quick fix (when variable or type is not found).
+* Add `Change type annotation` quick fix.
 
 ## 0.25.2
 * Reactivate pane after applying quick fix (when using `atom-ide-ui`).
