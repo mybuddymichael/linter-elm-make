@@ -75,7 +75,7 @@ Move your cursor to a problematic text range and invoke this command to show the
 
   ![quick-fix-intentions](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/quick-fix-intentions.gif?raw=true)
 
-  * If you have [atom-ide-ui](https://atom.io/packages/atom-ide-ui) installed, you can invoke the `Diagnostics: Show Actions At Position` command instead, or click on the appropriate button from the panel.  You can uncheck `Show Quick Fixes As Code Actions` in the Settings view if you do not want to show the buttons.
+  * If you have [atom-ide-ui](https://atom.io/packages/atom-ide-ui) installed, you can invoke the `Diagnostics: Show Actions At Position` command instead, or click on the appropriate button from the panel.  You can uncheck `Show Code Actions` in the Settings view if you do not want to show the buttons.
 
   ![quick-fix-diagnostics](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/quick-fix-diagnostics.gif?raw=true)
 
@@ -88,6 +88,9 @@ The number of available fixes for a given cursor position is shown with the lint
     * Add import
     * Add missing patterns
     * Fix module name
+    * Run `elm package install`
+    * Define top-level
+    * Change type annotation
 
 #### `Linter Elm Make: Quick Fix All`
 Fixes all issues in the active text editor in one go. If there is more than one fix for an issue, it will choose the first from the list.
