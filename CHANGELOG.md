@@ -1,3 +1,6 @@
+## 0.26.1
+* Add documentation and screenshot for `Use Datatips`.
+
 ## 0.26.0
 * Fix bug regarding "++" quick fixes.
 * Add `Use Datatips` option.
