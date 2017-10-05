@@ -49,6 +49,13 @@ Note: This will only work if `Report Warnings` is also checked.
 
   ![show-inferred-type-annotations-2](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/show-inferred-type-annotations-2.gif?raw=true)
 
+#### `Use Datatips`
+This is an experimental feature that uses Datatips instead of the Diagnostics UI (from [Nuclide](https://atom.io/packages/nuclide) or [atom-ide-ui](https://atom.io/packages/atom-ide-ui)) to show the issues.  This also enables integration with the  [elmjutsu](https://atom.io/packages/elmjutsu) package.
+
+![use-datatips](https://github.com/mybuddymichael/linter-elm-make/blob/master/images/use-datatips.gif?raw=true)
+
+- You can also invoke the `Datatip: Toggle` command instead of mousing over the problematic text range.
+
 #### `Work Directory`
 - If this is not blank, the linter will copy the source files from the project directory into this directory and use this as the working directory for `elm-make`.  This can be an absolute path or relative to the path of `elm-package.json`.
 
