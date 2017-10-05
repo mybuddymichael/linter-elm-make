@@ -1,3 +1,6 @@
+## 0.26.2
+* Allow defining top-level in another directory (e.g. Other.Another.foo).
+
 ## 0.26.1
 * Add documentation and screenshot for `Use Datatips`.
 
