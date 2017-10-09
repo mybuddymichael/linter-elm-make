@@ -42,6 +42,22 @@
 //   .linter-elm-make-fix-intention;
 //   content: "Remove redundant patterns:";
 // }
+.linter-elm-make-fix--run-elm-package-install::before {
+  .linter-elm-make-fix-intention;
+  content: 'Run elm package install:';
+}
+.linter-elm-make-fix--define-top-level::before {
+  .linter-elm-make-fix-intention;
+  content: 'Define top-level:';
+}
+.linter-elm-make-fix--change-type-annotation::before {
+  .linter-elm-make-fix-intention;
+  content: 'Change type annotation:';
+}
+.linter-elm-make-fix--search-for-symbols-matching-type::before {
+  .linter-elm-make-fix-intention;
+  content: 'Search for symbols matching type:';
+}
 .linter-elm-make.set-main-paths {
   .notes {
     padding: @component-padding;
