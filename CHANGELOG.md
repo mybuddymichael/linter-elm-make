@@ -1,5 +1,6 @@
 ## 0.27.0
 * Add `Search for symbols matching type` quick fix.
+* Add `Convert to port module` quick fix.
 * Make urls work inside Datatips.
 
 ## 0.26.2
