@@ -1,7 +1,7 @@
 {
   "name": "linter-elm-make",
   "main": "./lib/linter-elm-make.js",
-  "version": "0.26.2",
+  "version": "0.27.0",
   "description": "Lint Elm code with elm-make",
   "activationCommands": {},
   "repository": "https://github.com/mybuddymichael/linter-elm-make",
@@ -24,7 +24,11 @@
     "react": "15.6.1",
     "react-dom": "15.6.1"
   },
-  "package-deps": ["language-elm", "linter", "linter-ui-default"],
+  "package-deps": [
+    "language-elm",
+    "linter",
+    "linter-ui-default"
+  ],
   "providedServices": {
     "linter-elm-make.getWorkDirectory": {
       "versions": {
