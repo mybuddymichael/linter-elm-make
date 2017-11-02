@@ -24,11 +24,7 @@
     "react": "15.6.1",
     "react-dom": "15.6.1"
   },
-  "package-deps": [
-    "language-elm",
-    "linter",
-    "linter-ui-default"
-  ],
+  "package-deps": ["language-elm", "linter", "linter-ui-default"],
   "providedServices": {
     "linter-elm-make.getWorkDirectory": {
       "versions": {
@@ -60,6 +56,16 @@
     "elmjutsu.goToDefinition": {
       "versions": {
         "1.0.0": "consumeGoToDefinition"
+      }
+    },
+    "elmjutsu.getFunctionsMatchingType": {
+      "versions": {
+        "1.0.0": "consumeGetFunctionsMatchingType"
+      }
+    },
+    "elmjutsu.addImport": {
+      "versions": {
+        "1.0.0": "consumeAddImport"
       }
     },
     "status-bar": {
