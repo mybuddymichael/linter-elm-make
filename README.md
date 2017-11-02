@@ -98,7 +98,7 @@ The number of available fixes for a given cursor position is shown with the lint
     * Run `elm package install`
     * Define top-level
     * Change type annotation
-    * Search for symbols matching type
+    <!-- * Search for symbols matching type -->
     * Convert to port module
 
 #### `Linter Elm Make: Quick Fix All`

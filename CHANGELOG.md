@@ -1,7 +1,5 @@
-## 0.27.1
-* Check if there's an `elm-package.json` in the `.elm` file's project path first before looking elsewhere.  Thanks to @mbuscemi.
-
 ## 0.27.0
+* When searching for the `elm-package.json` for an `.elm` file, stop when we reach the root of the Atom project.
 <!-- * Add `Search for symbols matching type` quick fix. -->
 * Add `Convert to port module` quick fix.
 * Make urls work inside Datatips.
