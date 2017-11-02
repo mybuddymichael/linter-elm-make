@@ -1,3 +1,6 @@
+## 0.27.1
+* Fix bug introduced by previous version.  Thanks to @raffomania for reporting and debugging!
+
 ## 0.27.0
 * When searching for the `elm-package.json` for an `.elm` file, stop when we reach the root of the Atom project.
 <!-- * Add `Search for symbols matching type` quick fix. -->
