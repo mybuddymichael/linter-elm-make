@@ -1,3 +1,6 @@
+## 0.27.2
+* If the `.elm` file is not in an Atom project, search for `elm-package.json` until we reach the root.
+
 ## 0.27.1
 * Fix bug introduced by previous version.  Thanks to @raffomania for reporting and debugging!
 
