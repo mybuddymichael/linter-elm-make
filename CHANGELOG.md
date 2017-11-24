@@ -1,5 +1,5 @@
 ## 0.28.0
-* Add `Linter Elm Make: Lint` command.  Thanks to @anagrius for the suggestion!
+* Add `Linter Elm Make: Lint` command (#169).  Thanks to @anagrius for the suggestion!
 
 ## 0.27.2
 * If the `.elm` file is not in an Atom project, search for `elm-package.json` until we reach the root.
