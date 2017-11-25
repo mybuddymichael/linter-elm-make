@@ -1,3 +1,6 @@
+## 0.28.1
+* Revert to old behavior of searching for project directory.
+
 ## 0.28.0
 * Add `Linter Elm Make: Lint` command (#169).  Thanks to @anagrius for the suggestion!
 
