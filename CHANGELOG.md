@@ -1,3 +1,7 @@
+## 0.28.2
+* Fix #175.  Thanks to @adam-becker for reporting!
+* Fix #176.  Thanks to @hcphoenix for reporting!
+
 ## 0.28.1
 * Revert to old behavior of searching for project directory.
 
