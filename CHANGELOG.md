@@ -1,3 +1,6 @@
+## 0.28.3
+* Fix `Define top-level` bug.
+
 ## 0.28.2
 * Fix #175.  Thanks to @adam-becker for reporting!
 * Fix #176.  Thanks to @hcphoenix for reporting!
