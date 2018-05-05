@@ -1,3 +1,7 @@
+## 0.28.4
+* Fix #180.  Thanks to @mm-tfx for reporting and to @Arcanemagus for the fix!
+* Do not process files when editing remotely via Atom Teletype (for now).
+
 ## 0.28.3
 * Fix `Define top-level` bug.
 
