@@ -1,7 +1,7 @@
 {
   "name": "linter-elm-make",
   "main": "./lib/linter-elm-make.js",
-  "version": "0.28.4",
+  "version": "0.28.5",
   "description": "Lint Elm code with elm-make",
   "activationCommands": {},
   "repository": "https://github.com/mybuddymichael/linter-elm-make",
