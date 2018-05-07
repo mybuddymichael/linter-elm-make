@@ -1,3 +1,6 @@
+## 0.28.5
+* Fix issue about inferred type markers not being removed (#173).  Thanks to @3nigm4 for reporting!
+
 ## 0.28.4
 * Fix #180.  Thanks to @mm-tfx for reporting and to @Arcanemagus for the fix!
 * Do not process files when editing remotely via Atom Teletype (for now).
