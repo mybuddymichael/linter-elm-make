@@ -1,3 +1,6 @@
+## 0.29.0
+* Add `Add import as` quick fix.  Thanks to @anagrius for the suggestion!
+
 ## 0.28.5
 * Fix issue about inferred type markers not being removed (#173).  Thanks to @3nigm4 for reporting!
 

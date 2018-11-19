@@ -1,5 +1,5 @@
-@import 'ui-variables';
-@import 'octicon-mixins';
+@import "ui-variables";
+@import "octicon-mixins";
 
 .linter-elm-make {
   .fix-type {
@@ -16,31 +16,35 @@
 }
 .linter-elm-make-fix--replace-with::before {
   .linter-elm-make-fix-intention;
-  content: 'Replace with:';
+  content: "Replace with:";
 }
 .linter-elm-make-fix--add-type-annotation::before {
   .linter-elm-make-fix-intention;
-  content: 'Add type annotation:';
+  content: "Add type annotation:";
 }
 .linter-elm-make-fix--remove-unused-import::before {
   .linter-elm-make-fix-intention;
-  content: 'Remove unused import:';
+  content: "Remove unused import:";
 }
 .linter-elm-make-fix--add-import::before {
   .linter-elm-make-fix-intention;
-  content: 'Add import:';
+  content: "Add import:";
+}
+.linter-elm-make-fix--add-import-as::before {
+  .linter-elm-make-fix-intention;
+  content: "Add import as:";
 }
 .linter-elm-make-fix--add-missing-patterns::before {
   .linter-elm-make-fix-intention;
-  content: 'Add missing patterns:';
+  content: "Add missing patterns:";
 }
 .linter-elm-make-fix--fix-module-name::before {
   .linter-elm-make-fix-intention;
-  content: 'Fix module name:';
+  content: "Fix module name:";
 }
 .linter-elm-make-fix--convert-to-port-module::before {
   .linter-elm-make-fix-intention;
-  content: 'Convert to port module:';
+  content: "Convert to port module:";
 }
 // .linter-elm-make-fix--remove-redundant-patterns::before {
 //   .linter-elm-make-fix-intention;
@@ -48,19 +52,19 @@
 // }
 .linter-elm-make-fix--run-elm-package-install::before {
   .linter-elm-make-fix-intention;
-  content: 'Run elm package install:';
+  content: "Run elm package install:";
 }
 .linter-elm-make-fix--define-top-level::before {
   .linter-elm-make-fix-intention;
-  content: 'Define top-level:';
+  content: "Define top-level:";
 }
 .linter-elm-make-fix--change-type-annotation::before {
   .linter-elm-make-fix-intention;
-  content: 'Change type annotation:';
+  content: "Change type annotation:";
 }
 .linter-elm-make-fix--search-for-symbols-matching-type::before {
   .linter-elm-make-fix-intention;
-  content: 'Search for symbols matching type:';
+  content: "Search for symbols matching type:";
 }
 .linter-elm-make.set-main-paths {
   .notes {
@@ -167,7 +171,7 @@
   // .octicon(link-external);
 }
 // Make inline tooltip look like the linter panel.
-atom-text-editor:not([mini])[data-grammar='source elm'] {
+atom-text-editor:not([mini])[data-grammar="source elm"] {
   #linter-tooltip linter-message {
     .linter-elm-make-tooltip;
     color: @text-color;

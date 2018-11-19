@@ -93,6 +93,7 @@ The number of available fixes for a given cursor position is shown with the lint
     * Add type annotation
     * Remove unused import
     * Add import
+    * Add import as
     * Add missing patterns
     * Fix module name
     * Run `elm package install`

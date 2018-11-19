@@ -72,6 +72,11 @@
         "1.0.0": "consumeAddImport"
       }
     },
+    "elmjutsu.addImportAs": {
+      "versions": {
+        "1.0.0": "consumeAddImportAs"
+      }
+    },
     "status-bar": {
       "versions": {
         "^1.0.0": "consumeStatusBar"
